@@ -8,9 +8,7 @@ Please note that you need to have a dedicated Tray account and the credentials f
 
 ### Prerequisities
 
-In order to build and run this VPN client, make sure that you have Docker installed on your local machine.
-
-* [Linux](https://docs.docker.com/linux/started/)
+In order to build and run this VPN client, make sure that you have [Docker](https://docs.docker.com/linux/started/) installed on your local machine.
 
 As this image is designed to use the [host's network interface](https://docs.docker.com/network/host/), only Docker on Linux is supported at this time.
 
@@ -21,7 +19,7 @@ Finally, make sure that you've downloaded the credentials file and store it on t
 To build the container, simply clone the repository and run the build command:
 
 ```shell
-docker build -t tray/vpn-client .
+docker build -t tray/vpn-client:latest .
 ```
 
 ### Usage
@@ -69,4 +67,4 @@ Note that the `--rm` flag is added for convenience but you may choose to omit it
 
 ## Support
 
-If you encounter any issues, please open an issue here before submitting a PR.
+If you discover any problems or want to suggest ideas to improve this VPN client, please open an issue here before submitting a PR.
