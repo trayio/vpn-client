@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-# Install Strongswan
+# Install strongSwan
 RUN apt-get update && \
     apt-get install -y strongswan kmod;
 RUN apt-get clean

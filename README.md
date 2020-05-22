@@ -19,7 +19,7 @@ Finally, make sure that you've downloaded the credentials file and store it on t
 To build the container, simply clone the repository and run the build command:
 
 ```shell
-docker build -t tray/vpn-client:latest .
+docker build -t tray-vpn-client:latest .
 ```
 
 ### Usage
@@ -33,13 +33,13 @@ docker run -d \
 --cap-add=NET_ADMIN \
 --cap-add=SYS_MODULE \
 --env-file /path/to/tray-vpn-credentials.env \
-tray/vpn-client:latest
+tray-vpn-client:latest
 ```
 
 In situations where passing a variable file might not be available to you, you can also pass the variables using the `-e` or `--env' options. For example:
 
 ```shell
-docker run ... --env VAR1=value1 --env VAR2=value2 ... tray/vpn-client:latest
+docker run ... --env VAR1=value1 --env VAR2=value2 ... tray-vpn-client:latest
 ```
 
 The values can be omitted if they are already set on the host's environment variable. For example:
@@ -48,7 +48,7 @@ The values can be omitted if they are already set on the host's environment vari
 export VAR1=value1
 export VAR2=value2
 
-docker run ... --env VAR1 --env VAR2 ... tray/vpn-client:latest
+docker run ... --env VAR1 --env VAR2 ... tray-vpn-client:latest
 ```
 
 For more details, refer to the [Docker Run](https://docs.docker.com/engine/reference/run/) documentation for other options available for you, such as adding a nice name to the container.
