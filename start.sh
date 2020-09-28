@@ -18,4 +18,4 @@ ERR_MSG="Unable to start VPN client. Please ensure that this variable is defined
 /root/gen-ipsec-secrets.sh > /etc/ipsec.secrets
 
 # Start service
-/usr/sbin/ipsec start --nofork
+/usr/sbin/ipsec start --nofork --debug-all
